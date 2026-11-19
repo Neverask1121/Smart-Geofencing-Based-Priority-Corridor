@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="ahmedabad.net.xml"/>
+        <route-files value="civilian.rou.xml"/>
+        <additional-files value="vtypes.add.xml"/>
+    </input>
+    <time><step-length value="0.5"/></time>
+    <processing>
+        <time-to-teleport value="180"/>
+        <ignore-junction-blocker value="30"/>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <max-depart-delay value="60"/>
+        <default.speeddev value="0.1"/>
+    </processing>
+    <report><no-step-log value="true"/><no-warnings value="true"/></report>
+</configuration>

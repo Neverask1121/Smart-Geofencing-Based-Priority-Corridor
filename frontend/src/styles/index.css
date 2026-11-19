@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+@theme {
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --color-bg: #0a0e13;
+  --color-panel: #11161d;
+  --color-raised: #182029;
+  --color-line: #27313c;
+  --color-ink: #e8edf2;
+  --color-ink-2: #a4b1be;
+  --color-ink-3: #74828f;
+  --color-accent: #3987e5;
+
+  /* Status colours are reserved for state and always ship with a label. */
+  --color-go: #35c27b;
+  --color-caution: #f0b429;
+  --color-stop: #ef5a5a;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.eyebrow {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+}
+
+.scroll-thin { scrollbar-width: thin; scrollbar-color: var(--color-line) transparent; }
+
+button:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 30px; padding: 0 10px; border-radius: 6px;
+  background: var(--color-raised); border: 1px solid var(--color-line);
+  color: var(--color-ink); font-weight: 500; cursor: pointer;
+  transition: background 120ms, border-color 120ms;
+}
+.btn:hover:not(:disabled) { background: #212b36; border-color: #3a4757; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--color-accent); border-color: var(--color-accent); color: #06121f; font-weight: 600; }
+.btn-primary:hover:not(:disabled) { background: #5a9df0; border-color: #5a9df0; }
+
+.field {
+  height: 30px; width: 100%; padding: 0 8px; border-radius: 6px;
+  background: var(--color-raised); border: 1px solid var(--color-line); color: var(--color-ink);
+}
+
+.glass {
+  background: rgba(14, 19, 26, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+}
+
+.pulse-dot { animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.35; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-dot { animation: none; }
+}
+
+.maplibregl-ctrl-attrib { background: rgba(10, 14, 19, 0.7) !important; color: var(--color-ink-3); font-size: 10px; }
+.maplibregl-ctrl-attrib a { color: var(--color-ink-2) !important; }
+
+/* Demo mode: keep map controls clear of the KPI strip. */
+.demo-mode .maplibregl-ctrl-bottom-right,
+.demo-mode .maplibregl-ctrl-bottom-left { bottom: 104px; }

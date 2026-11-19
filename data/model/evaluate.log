@@ -1,0 +1,243 @@
+10/120 128s
+20/120 197s
+30/120 285s
+40/120 367s
+50/120 459s
+60/120 574s
+70/120 677s
+80/120 863s
+90/120 986s
+100/120 1088s
+110/120 1195s
+120/120 1279s
+ Retrying in 1 seconds
+ Retrying in 1 seconds
+ Retrying in 1 seconds
+ Retrying in 1 seconds
+ Retrying in 1 seconds
+ Retrying in 1 seconds
+{
+ "summary": {
+  "low": {
+   "none": {
+    "ev_time": 448.91,
+    "ev_loss": 100.38,
+    "civ_delay": 56.79,
+    "run_queue": 0.64,
+    "requests": 0.0,
+    "expired": 0,
+    "conflicts": 0,
+    "violations": 0,
+    "collisions": 46,
+    "teleports": 0
+   },
+   "fixed_130": {
+    "ev_time": 387.65,
+    "ev_loss": 39.17,
+    "civ_delay": 55.33,
+    "run_queue": 0.6,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 0,
+    "violations": 0,
+    "collisions": 70,
+    "teleports": 0,
+    "avg_radius": 130.0
+   },
+   "fixed_190": {
+    "ev_time": 382.26,
+    "ev_loss": 33.75,
+    "civ_delay": 54.64,
+    "run_queue": 0.6,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 2,
+    "violations": 0,
+    "collisions": 48,
+    "teleports": 0,
+    "avg_radius": 190.0
+   },
+   "fixed_340": {
+    "ev_time": 382.24,
+    "ev_loss": 33.76,
+    "civ_delay": 54.81,
+    "run_queue": 0.6,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 5,
+    "violations": 0,
+    "collisions": 58,
+    "teleports": 0,
+    "avg_radius": 340.0
+   },
+   "xgboost": {
+    "ev_time": 383.27,
+    "ev_loss": 34.75,
+    "civ_delay": 54.77,
+    "run_queue": 0.6,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 3,
+    "violations": 0,
+    "collisions": 60,
+    "teleports": 0,
+    "avg_radius": 196.16
+   }
+  },
+  "medium": {
+   "none": {
+    "ev_time": 477.15,
+    "ev_loss": 128.63,
+    "civ_delay": 64.84,
+    "run_queue": 1.21,
+    "requests": 0.0,
+    "expired": 0,
+    "conflicts": 0,
+    "violations": 0,
+    "collisions": 214,
+    "teleports": 0
+   },
+   "fixed_130": {
+    "ev_time": 415.56,
+    "ev_loss": 67.02,
+    "civ_delay": 62.8,
+    "run_queue": 1.06,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 1,
+    "violations": 0,
+    "collisions": 236,
+    "teleports": 0,
+    "avg_radius": 130.0
+   },
+   "fixed_190": {
+    "ev_time": 413.59,
+    "ev_loss": 65.05,
+    "civ_delay": 62.23,
+    "run_queue": 1.09,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 2,
+    "violations": 0,
+    "collisions": 206,
+    "teleports": 0,
+    "avg_radius": 190.0
+   },
+   "fixed_340": {
+    "ev_time": 412.68,
+    "ev_loss": 64.18,
+    "civ_delay": 61.76,
+    "run_queue": 1.09,
+    "requests": 24.0,
+    "expired": 3,
+    "conflicts": 3,
+    "violations": 0,
+    "collisions": 236,
+    "teleports": 0,
+    "avg_radius": 340.0
+   },
+   "xgboost": {
+    "ev_time": 413.5,
+    "ev_loss": 64.97,
+    "civ_delay": 62.05,
+    "run_queue": 1.06,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 3,
+    "violations": 0,
+    "collisions": 220,
+    "teleports": 0,
+    "avg_radius": 203.24
+   }
+  },
+  "high": {
+   "none": {
+    "ev_time": 505.34,
+    "ev_loss": 156.78,
+    "civ_delay": 74.59,
+    "run_queue": 1.86,
+    "requests": 0.0,
+    "expired": 0,
+    "conflicts": 0,
+    "violations": 0,
+    "collisions": 482,
+    "teleports": 4
+   },
+   "fixed_130": {
+    "ev_time": 438.31,
+    "ev_loss": 89.76,
+    "civ_delay": 72.0,
+    "run_queue": 1.69,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 1,
+    "violations": 0,
+    "collisions": 452,
+    "teleports": 3,
+    "avg_radius": 130.0
+   },
+   "fixed_190": {
+    "ev_time": 430.66,
+    "ev_loss": 82.17,
+    "civ_delay": 71.89,
+    "run_queue": 1.64,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 1,
+    "violations": 0,
+    "collisions": 462,
+    "teleports": 2,
+    "avg_radius": 190.0
+   },
+   "fixed_340": {
+    "ev_time": 427.54,
+    "ev_loss": 79.02,
+    "civ_delay": 71.64,
+    "run_queue": 1.69,
+    "requests": 24.0,
+    "expired": 4,
+    "conflicts": 3,
+    "violations": 0,
+    "collisions": 494,
+    "teleports": 18,
+    "avg_radius": 340.0
+   },
+   "xgboost": {
+    "ev_time": 433.07,
+    "ev_loss": 84.6,
+    "civ_delay": 72.0,
+    "run_queue": 1.61,
+    "requests": 24.0,
+    "expired": 0,
+    "conflicts": 2,
+    "violations": 0,
+    "collisions": 486,
+    "teleports": 0,
+    "avg_radius": 208.2
+   }
+  }
+ },
+ "xgboost_vs_fixed": {
+  "fixed_130": {
+   "mean_ev_time_diff_s": -3.89,
+   "ci95": [
+    -8.17,
+    0.34
+   ]
+  },
+  "fixed_190": {
+   "mean_ev_time_diff_s": 1.11,
+   "ci95": [
+    -1.65,
+    3.92
+   ]
+  },
+  "fixed_340": {
+   "mean_ev_time_diff_s": 2.47,
+   "ci95": [
+    -1.91,
+    6.81
+   ]
+  }
+ }
+}

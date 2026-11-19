@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+frontend/dist/
+frontend/public/maplibre/
+data/dataset/gen.log
+*.tsbuildinfo

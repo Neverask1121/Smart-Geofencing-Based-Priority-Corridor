@@ -1,0 +1,159 @@
+{
+  "model": "XGBoost regressor on decision cost J(state, radius); radius = soft minimum of the predicted curve",
+  "features": [
+    "ev_speed",
+    "ev_class",
+    "dist_to_signal",
+    "approach_lanes",
+    "speed_limit",
+    "queue_ahead",
+    "veh_ahead",
+    "density_ahead",
+    "mean_speed_ahead",
+    "link_green",
+    "time_to_green",
+    "green_remaining",
+    "cross_queue",
+    "cross_density",
+    "downstream_occupancy",
+    "eta_free",
+    "green_at_arrival",
+    "wait_at_arrival",
+    "green_slack",
+    "queue_clear_s",
+    "radius",
+    "radius_minus_dist"
+  ],
+  "params": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "n_estimators": 200,
+    "min_child_weight": 20
+  },
+  "temperature": 0.5,
+  "lambda": 0.02,
+  "radii_swept_m": [
+    80.0,
+    130.0,
+    190.0,
+    260.0,
+    340.0,
+    420.0,
+    480.0
+  ],
+  "train_crossings": 720,
+  "test_crossings": 176,
+  "cost_curve_r2_test": 0.267,
+  "test_mae_m": 111.7,
+  "test_mae_constant_baseline_m": 113.9,
+  "fired_radius_m": {
+    "mean": 177.2,
+    "p10": 133.3,
+    "p90": 243.8
+  },
+  "best_fixed_radius_m": 190,
+  "decision_cost": {
+    "no_priority": 126.11,
+    "best_fixed": 107.17,
+    "model": 106.75,
+    "oracle": 103.95
+  },
+  "model_minus_fixed_ci95": [
+    -0.89,
+    -0.02
+  ],
+  "ev_time_s": {
+    "model": 98.7,
+    "best_fixed": 99.1
+  },
+  "civilian_halt_s": {
+    "model": 401.9,
+    "best_fixed": 401.5
+  },
+  "feature_importance_gain": [
+    [
+      "eta_free",
+      0.153
+    ],
+    [
+      "radius",
+      0.149
+    ],
+    [
+      "speed_limit",
+      0.147
+    ],
+    [
+      "dist_to_signal",
+      0.079
+    ],
+    [
+      "approach_lanes",
+      0.078
+    ],
+    [
+      "radius_minus_dist",
+      0.051
+    ],
+    [
+      "cross_density",
+      0.042
+    ],
+    [
+      "veh_ahead",
+      0.036
+    ],
+    [
+      "density_ahead",
+      0.029
+    ],
+    [
+      "cross_queue",
+      0.029
+    ],
+    [
+      "ev_speed",
+      0.027
+    ],
+    [
+      "green_slack",
+      0.027
+    ],
+    [
+      "link_green",
+      0.026
+    ],
+    [
+      "wait_at_arrival",
+      0.026
+    ],
+    [
+      "queue_clear_s",
+      0.025
+    ],
+    [
+      "mean_speed_ahead",
+      0.019
+    ],
+    [
+      "time_to_green",
+      0.016
+    ],
+    [
+      "downstream_occupancy",
+      0.016
+    ],
+    [
+      "ev_class",
+      0.014
+    ],
+    [
+      "green_remaining",
+      0.01
+    ],
+    [
+      "green_at_arrival",
+      0.002
+    ]
+  ]
+}
